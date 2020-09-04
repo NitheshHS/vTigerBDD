@@ -65,7 +65,8 @@ public class HomePage {
 	public void logout() {
 		WebdriverUtils wLib=new WebdriverUtils();
 		wLib.moveToElement(driver, AdministratorIMG);
-		sigoutLink.click();
+		wLib.waitAndClick(driver, sigoutLink);
+		
 	}
 	/**
 	 * click on organization Link

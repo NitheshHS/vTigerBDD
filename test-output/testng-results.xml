@@ -1,76 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34000" started-at="2020-09-04T04:10:54Z" finished-at="2020-09-04T04:11:28Z">
+  <suite name="Default suite" duration-ms="138652" started-at="2020-09-04T13:18:43Z" finished-at="2020-09-04T13:21:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34000" started-at="2020-09-04T04:10:54Z" finished-at="2020-09-04T04:11:28Z">
-      <class name="sausceLabs.ParallelExceution">
-        <test-method status="PASS" signature="exceuteTest(org.openqa.selenium.Platform, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.ParallelExceution@4678c730]" name="exceuteTest" duration-ms="17908" started-at="2020-09-04T09:40:55Z" data-provider="environment variables" finished-at="2020-09-04T09:41:12Z">
+    <test name="Default test" duration-ms="138652" started-at="2020-09-04T13:18:43Z" finished-at="2020-09-04T13:21:02Z">
+      <class name="com.vTiger.runner.Runner">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="setUp" is-config="true" duration-ms="2943" started-at="2020-09-04T18:48:44Z" finished-at="2020-09-04T18:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="feature" duration-ms="109291" started-at="2020-09-04T18:48:47Z" data-provider="features" finished-at="2020-09-04T18:50:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[WIN10]]>
+                <![CDATA[Create Organization]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at com.vTiger.runner.Runner.feature(Runner.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+	at com.vTiger.stepDef.CreateOrgStepDef.user_search_for_Orgaization(CreateOrgStepDef.java:60)
+	at ✽.When User search for Orgaization "NitheshHS"(Organizarion.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="feature" duration-ms="23829" started-at="2020-09-04T18:50:37Z" data-provider="features" finished-at="2020-09-04T18:51:00Z">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[85]]>
+                <![CDATA[Testing login Feature of vTiger Application]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exceuteTest -->
-        <test-method status="PASS" signature="exceuteTest(org.openqa.selenium.Platform, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.ParallelExceution@4678c730]" name="exceuteTest" duration-ms="33904" started-at="2020-09-04T09:40:55Z" data-provider="environment variables" finished-at="2020-09-04T09:41:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WIN8]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[80]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="tearDown" is-config="true" duration-ms="1470" started-at="2020-09-04T18:51:00Z" finished-at="2020-09-04T18:51:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exceuteTest -->
-        <test-method status="PASS" signature="exceuteTest(org.openqa.selenium.Platform, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.ParallelExceution@4678c730]" name="exceuteTest" duration-ms="19832" started-at="2020-09-04T09:40:55Z" data-provider="environment variables" finished-at="2020-09-04T09:41:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WIN10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[81]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exceuteTest -->
-      </class> <!-- sausceLabs.ParallelExceution -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vTiger.runner.Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

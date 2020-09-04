@@ -22,7 +22,7 @@ plugin= {"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"},
 dryRun=false,
 monochrome=true)
 @Listeners(com.vTiger.utility.ListenerIMP.class)
-public class Runner extends ListenerIMP{
+public class RunnerTest extends ListenerIMP{
 	public TestNGCucumberRunner testrun;
 
 	@BeforeClass(alwaysRun=true)

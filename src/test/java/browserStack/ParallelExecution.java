@@ -47,7 +47,8 @@ public class ParallelExecution {
 	  {Platform.MAC, "chrome", "81"},
 	  {Platform.WIN8, "chrome", "80"},
 	  {Platform.WINDOWS, "firefox", "74"},
-	  {Platform.MAC,"safari","13"}
+	  {Platform.MAC,"safari","13"},
+	  {Platform.MAC,"chrome","79"}
 	  };
 	  return testData;
 	}

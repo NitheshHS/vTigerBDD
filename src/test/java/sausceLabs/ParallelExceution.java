@@ -9,19 +9,35 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ParallelExceution {
+	WebDriver driver;
+//	@Parameters({"platform","browserName","browserVersion"})
+//	@BeforeMethod
+//	public void configBM(String platform,String browserName,String BrowserVersion) throws MalformedURLException {
+//		DesiredCapabilities cap=new DesiredCapabilities();
+//		cap.setCapability("platform", platform);;
+//		cap.setBrowserName(browserName);
+//		cap.setVersion(BrowserVersion);
+//		cap.setCapability("name", "My first cross platform test");
+//		
+//		 driver=new RemoteWebDriver(new URL("https://NitheshHS:5133f7c1-5674-4aab-9f74-a4a20d421043@ondemand.us-west-1.saucelabs.com:443/wd/hub"), 
+//				cap);
+//	}
 	@Test(dataProvider="environment variables")
 	public void exceuteTest(Platform platform,String browserName,String BrowserVersion) throws MalformedURLException {
 		DesiredCapabilities cap=new DesiredCapabilities();
-		cap.setPlatform(platform);
+		cap.setCapability("platform", platform);;
 		cap.setBrowserName(browserName);
 		cap.setVersion(BrowserVersion);
-		cap.setCapability("name", "My first cross platform test");
-		
-		WebDriver driver=new RemoteWebDriver(new URL("https://NitheshHS:5133f7c1-5674-4aab-9f74-a4a20d421043@ondemand.us-west-1.saucelabs.com:443/wd/hub"), 
+		cap.setCapability("name", "Cross browser");
+		cap.setCapability("extendedDebugging", true);
+		cap.setCapability("capturePerformance", true);
+		 driver=new RemoteWebDriver(new URL("https://NitheshHS:5133f7c1-5674-4aab-9f74-a4a20d421043@ondemand.us-west-1.saucelabs.com:443/wd/hub"), 
 				cap);
 		driver.get("http://www.google.com");
 	    WebElement element = driver.findElement(By.name("q"));
@@ -38,7 +54,8 @@ public class ParallelExceution {
 		Object[][] testdata=new Object[][] {
 			{Platform.WIN10,"chrome","81"},
 			{Platform.WIN8,"chrome","80"},
-			{Platform.WIN10,"chrome","85"}
+			{Platform.WIN8,"chrome","85"},
+			{Platform.SIERRA,"chrome","80"}
 		};
 		return testdata;
 	}
