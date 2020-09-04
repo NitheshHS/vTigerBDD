@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34000" started-at="2020-09-04T04:10:54Z" finished-at="2020-09-04T04:11:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34000" started-at="2020-09-04T04:10:54Z" finished-at="2020-09-04T04:11:28Z">
+      <class name="sausceLabs.ParallelExceution">
+        <test-method status="PASS" signature="exceuteTest(org.openqa.selenium.Platform, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.ParallelExceution@4678c730]" name="exceuteTest" duration-ms="17908" started-at="2020-09-04T09:40:55Z" data-provider="environment variables" finished-at="2020-09-04T09:41:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WIN10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[85]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exceuteTest -->
+        <test-method status="PASS" signature="exceuteTest(org.openqa.selenium.Platform, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.ParallelExceution@4678c730]" name="exceuteTest" duration-ms="33904" started-at="2020-09-04T09:40:55Z" data-provider="environment variables" finished-at="2020-09-04T09:41:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WIN8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[80]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exceuteTest -->
+        <test-method status="PASS" signature="exceuteTest(org.openqa.selenium.Platform, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.ParallelExceution@4678c730]" name="exceuteTest" duration-ms="19832" started-at="2020-09-04T09:40:55Z" data-provider="environment variables" finished-at="2020-09-04T09:41:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WIN10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[81]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exceuteTest -->
+      </class> <!-- sausceLabs.ParallelExceution -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
