@@ -59,4 +59,16 @@ public class ParallelExceution {
 		};
 		return testdata;
 	}
+//	<?xml version="1.0" encoding="UTF-8"?>
+//	<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+//	<suite name="Suite">
+//	  <test thread-count="5" name="Test">
+//	  <parameter name="platform" value="Windows"/>
+//	  <parameter name="browserName" value="chrome"/>
+//	  <parameter name="browserVersion" value="81"/> 
+//	    <classes>
+//	      <class name="sausceLabs.ParallelExceution"/>
+//	    </classes>
+//	  </test> <!-- Test -->
+//	</suite> <!-- Suite -->
 }

@@ -1,81 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="138652" started-at="2020-09-04T13:18:43Z" finished-at="2020-09-04T13:21:02Z">
+  <suite name="Suite" duration-ms="20406" started-at="2020-09-06T14:41:35Z" finished-at="2020-09-06T14:41:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="138652" started-at="2020-09-04T13:18:43Z" finished-at="2020-09-04T13:21:02Z">
-      <class name="com.vTiger.runner.Runner">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="setUp" is-config="true" duration-ms="2943" started-at="2020-09-04T18:48:44Z" finished-at="2020-09-04T18:48:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="feature" duration-ms="109291" started-at="2020-09-04T18:48:47Z" data-provider="features" finished-at="2020-09-04T18:50:37Z">
+    <test name="TestMAC" duration-ms="18387" started-at="2020-09-06T14:41:35Z" finished-at="2020-09-06T14:41:53Z">
+      <class name="sausceLabs.RunParallel">
+        <test-method status="PASS" signature="configBC(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.RunParallel@3bfdc050]" name="configBC" is-config="true" duration-ms="12864" started-at="2020-09-06T20:11:35Z" finished-at="2020-09-06T20:11:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Create Organization]]>
+                <![CDATA[MAC]]>
               </value>
             </param>
-          </params>
-          <exception class="cucumber.runtime.CucumberException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.vTiger.runner.Runner.feature(Runner.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at com.vTiger.stepDef.CreateOrgStepDef.user_search_for_Orgaization(CreateOrgStepDef.java:60)
-	at ✽.When User search for Orgaization "NitheshHS"(Organizarion.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="feature" duration-ms="23829" started-at="2020-09-04T18:50:37Z" data-provider="features" finished-at="2020-09-04T18:51:00Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[Testing login Feature of vTiger Application]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[85]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vTiger.runner.Runner@5622fdf]" name="tearDown" is-config="true" duration-ms="1470" started-at="2020-09-04T18:51:00Z" finished-at="2020-09-04T18:51:02Z">
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="RunTest()[pri:0, instance:sausceLabs.RunParallel@3bfdc050]" name="RunTest" duration-ms="5046" started-at="2020-09-06T20:11:48Z" finished-at="2020-09-06T20:11:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.vTiger.runner.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- RunTest -->
+        <test-method status="PASS" signature="configAc()[pri:0, instance:sausceLabs.RunParallel@3bfdc050]" name="configAc" is-config="true" duration-ms="446" started-at="2020-09-06T20:11:53Z" finished-at="2020-09-06T20:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAc -->
+      </class> <!-- sausceLabs.RunParallel -->
+    </test> <!-- TestMAC -->
+    <test name="TestWindows" duration-ms="20406" started-at="2020-09-06T14:41:35Z" finished-at="2020-09-06T14:41:55Z">
+      <class name="sausceLabs.RunParallel">
+        <test-method status="PASS" signature="configBC(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sausceLabs.RunParallel@2b98378d]" name="configBC" is-config="true" duration-ms="12691" started-at="2020-09-06T20:11:35Z" finished-at="2020-09-06T20:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WINDOWS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[85]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="RunTest()[pri:0, instance:sausceLabs.RunParallel@2b98378d]" name="RunTest" duration-ms="6125" started-at="2020-09-06T20:11:48Z" finished-at="2020-09-06T20:11:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunTest -->
+        <test-method status="PASS" signature="configAc()[pri:0, instance:sausceLabs.RunParallel@2b98378d]" name="configAc" is-config="true" duration-ms="1552" started-at="2020-09-06T20:11:54Z" finished-at="2020-09-06T20:11:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAc -->
+      </class> <!-- sausceLabs.RunParallel -->
+    </test> <!-- TestWindows -->
+  </suite> <!-- Suite -->
 </testng-results>
